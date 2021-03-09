@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- 直接对Employee元素进行声明 -->
+    <xs:element name="Employee">
+        <!-- complexType 元素定义复杂类型。复杂类型的元素是包含其他元素和/或属性的 XML 元素。 -->
+        <xs:complexType>
+            <!-- 要求子元素必须按顺序出现。每个子元素可出现 0 到任意次数 -->
+            <xs:sequence>
+                <xs:element name="age">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="18"/>
+                            <xs:maxInclusive value="58"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+            <!-- 属性均作为简易类型来声明 -->
+            <xs:attribute name="name" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

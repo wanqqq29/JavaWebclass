@@ -13,7 +13,7 @@ public class XmlTest {
         ValidateXML validateXML = new ValidateXML();
         boolean bol = false;
         try {
-            bol = validateXML.Validatexml("../../employee.xsd", "../../employee.xml");
+            bol = validateXML.Validatexml("C:\\WorkSpace\\JavaWebclass\\Class1\\employee.xsd", "C:\\WorkSpace\\JavaWebclass\\Class1\\employee.xml");
         } catch (SAXException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

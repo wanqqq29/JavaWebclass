@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <!-- xml文档声明 -->
+
+ 
+<Team> <!-- 根节点队伍 -->
+    <!-- 足球队开始 -->
+    <FootballTeam>
+        <TeamName>Madrid</TeamName>
+        <Member>
+            <MemberName>Ronaldo</MemberName>
+            <MemberName>Casillas</MemberName>
+            <MemberName>Ramos</MemberName>
+            <MemberName>Modric</MemberName>
+            <MemberName>Benzema</MemberName>
+        </Member>
+    </FootballTeam>
+    <!-- 足球队结束 -->
+    <!-- 篮球队开始 -->
+    <BasketballTeam>
+        <TeamName>Lakers</TeamName>
+        <Member>
+            <MemberName>Oneal</MemberName>
+            <MemberName>Bryant</MemberName>
+        </Member>
+    </BasketballTeam>
+    <!-- 篮球队结束 -->
+</Team>
